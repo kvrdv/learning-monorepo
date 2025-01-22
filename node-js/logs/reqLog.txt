@@ -1,4 +1,0 @@
-20250122	01:56:35	ab9f8a3c-c5a6-4983-9794-18aa537d5392	/	undefined	/
-20250122	01:56:35	c89cd536-a1bd-4b6f-a3f8-8521698c4e24	/css/style.css	undefined	/css/style.css
-20250122	01:57:13	826cae91-7fb9-4cb9-b642-c3dca9532d7f	GET	undefined	/
-20250122	01:57:13	3ff44e33-87bd-4376-872b-b285ae203bf5	GET	undefined	/css/style.css
