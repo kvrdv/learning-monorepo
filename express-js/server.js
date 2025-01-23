@@ -1,30 +1,15 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const app = express();
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
+const corsOptions = require('./config/corsOptions');
+
+const app = express();
 
 const PORT = process.env.PORT || 3000;
 
 app.use(logger);
-
-const whitelist = [
-	'https://www.yoursite.com',
-	'http://127.0.0.1:5500',
-	'http://localhost:3000',
-];
-
-const corsOptions = {
-	origin: (origin, callback) => {
-		if (whitelist.indexOf(origin) !== -1 || !origin) {
-			callback(null, true);
-		} else {
-			callback(new Error('Not allowed by CORS'));
-		}
-	},
-	optionsSuccessStatus: 200,
-};
 
 app.use(cors(corsOptions));
 
@@ -33,39 +18,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use('/', express.static(path.join(__dirname, '/public')));
-app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
 app.use('/', require('./routes/root'));
-app.use('/subdir', require('./routes/subdir'));
 app.use('/employees', require('./routes/api/employees'));
-
-// app.get(
-// 	'/hello(.html)?',
-// 	(req, res, next) => {
-// 		console.log('attempted to load hello.html');
-// 		next();
-// 	},
-// 	(req, res) => {
-// 		res.send('Hello World!');
-// 	},
-// );
-
-// const one = (req, res, next) => {
-// 	console.log('one');
-// 	next();
-// };
-
-// const two = (req, res, next) => {
-// 	console.log('two');
-// 	next();
-// };
-
-// const three = (req, res) => {
-// 	console.log('three');
-// 	res.send('Finished!');
-// };
-
-// app.get('/chain(.html)?', [one, two, three]);
 
 app.all('*', (req, res) => {
 	res.status(404);

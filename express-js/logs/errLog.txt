@@ -12,3 +12,5 @@
 20250122	23:31:34	e320ccd8-0a0c-4cc3-a682-cae1f60a5b94	Error: Not allowed by CORS
 20250122	23:31:34	027d7cd5-8b3f-4b8d-a785-7a3dc6b7b9c9	Error: Not allowed by CORS
 20250122	23:31:34	95b41759-e7ee-464b-8246-35a5f580e42f	Error: Not allowed by CORS
+20250123	13:46:26	4e518474-9142-4a1c-8b2c-05f7cc984432	TypeError: res.staus is not a function
+20250123	13:51:46	eb601f59-5936-494e-bc0e-95d94ac1d742	TypeError: console.log.length is not a function
