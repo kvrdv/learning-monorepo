@@ -1,0 +1,14 @@
+services:
+  mongo:
+    image: mongo
+    container_name: learning-monorepo
+    ports:
+      - '27017:27017'
+    volumes:
+      - learning-monorepo-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: process.env.MONGO_INITDB_ROOT_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: pprocess.env.MONGO_INITDB_ROOT_PASSWORD
+
+volumes:
+  learning-monorepo-data:
