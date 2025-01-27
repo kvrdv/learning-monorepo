@@ -231,3 +231,15 @@
 20250127	11:33:55	a030d35f-36e6-4053-9320-6f627479e6a7	GET	undefined	/logout
 20250127	11:34:35	d71ea852-d956-4853-ae71-e99c47873cd8	GET	undefined	/logout
 20250127	11:36:00	84ab3df1-a6fb-48ec-b0ba-5d61808c03ab	GET	undefined	/logout
+20250127	14:55:49	c6b9f74b-7005-467a-b295-8d6a637569a2	POST	undefined	/auth
+20250127	14:55:53	d26478a4-e765-4a81-89a9-9c297433d338	POST	undefined	/auth
+20250127	14:56:15	bde070d3-7917-4539-b87e-8ad75d6d92ec	GET	undefined	/employees
+20250127	14:57:30	10acc1f3-817e-406a-90b8-82ae09f0dd26	POST	undefined	/employees
+20250127	14:58:05	f8f5b9dc-54de-4b08-84a1-0bf1cf9c05e2	POST	undefined	/employees
+20250127	14:58:12	518b6415-2acf-4690-86c6-6c7d288ba6fc	POST	undefined	/auth
+20250127	14:58:23	1b718b3e-9974-4043-95ce-2b6340826978	POST	undefined	/employees
+20250127	14:58:58	9f200f9e-bc7b-4607-94ee-fbdf1af5c45a	POST	undefined	/auth
+20250127	14:59:07	4cc2906c-f6db-4a40-9883-dcda72a7257d	POST	undefined	/employees
+20250127	14:59:50	889bb452-483a-4f51-9553-4e2cd0305723	DELETE	undefined	/employees
+20250127	15:00:02	557f10e8-c855-447f-885d-b5c157d0d831	POST	undefined	/auth
+20250127	15:00:08	8196fb62-d4c7-4916-9bab-6a17fccd4cbe	DELETE	undefined	/employees

@@ -4,12 +4,11 @@ const usersDB = {
 		this.users = data;
 	},
 };
-
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const fsPromises = require('fs').promises;
 const path = require('path');
-const bcrypt = require('bcrypt');
 
 const handleLogin = async (req, res) => {
 	const { user, password } = req.body;
@@ -26,8 +25,16 @@ const handleLogin = async (req, res) => {
 	const match = await bcrypt.compare(password, foundUser.password);
 
 	if (match) {
+		const roles = Object.values(foundUser.roles);
+
 		const accessToken = jwt.sign(
-			{ username: foundUser.username },
+			{
+				UserInfo: {
+					username: foundUser.username,
+					roles: roles,
+				},
+			},
+
 			process.env.ACCESS_TOKEN_SECRET,
 			{ expiresIn: '30s' },
 		);
@@ -41,7 +48,6 @@ const handleLogin = async (req, res) => {
 		const otherUsers = usersDB.users.filter(
 			(person) => person.username !== foundUser.username,
 		);
-
 		const currentUser = { ...foundUser, refreshToken };
 
 		usersDB.setUsers([...otherUsers, currentUser]);
