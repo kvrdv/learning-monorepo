@@ -2,7 +2,7 @@
   "clientName": "Thunder Client",
   "collectionName": "learning-monorepo",
   "collectionId": "79cc137e-fc7b-4fee-8554-3b6f392c17c5",
-  "dateExported": "2025-01-27T14:18:40.391Z",
+  "dateExported": "2025-01-27T14:24:23.293Z",
   "version": "1.2",
   "folders": [],
   "requests": [
@@ -49,12 +49,8 @@
       "method": "GET",
       "sortNum": 30000,
       "created": "2025-01-26T17:58:29.081Z",
-      "modified": "2025-01-27T14:12:19.943Z",
-      "headers": [],
-      "auth": {
-        "type": "bearer",
-        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkRvbSIsInJvbGVzIjpbMjAwMV19LCJpYXQiOjE3Mzc5ODcxMzAsImV4cCI6MTczNzk4NzE0MH0.qkEXA233QrcgdA_WemUaYAR9iHuiGZwlysXSRNt2Kek"
-      }
+      "modified": "2025-01-27T14:23:55.825Z",
+      "headers": []
     },
     {
       "_id": "bb4de7f5-abb9-4857-998d-29ef8cf423d1",
@@ -65,13 +61,8 @@
       "method": "GET",
       "sortNum": 40000,
       "created": "2025-01-26T18:37:46.426Z",
-      "modified": "2025-01-27T14:08:12.067Z",
-      "headers": [
-        {
-          "name": "Cookie",
-          "value": "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRvbSIsImlhdCI6MTczNzk4Njg3OSwiZXhwIjoxNzM4MDczMjc5fQ.AvnakbIqClYgXofsztbZP4_vcwzR29tZShrYibbI_D8"
-        }
-      ]
+      "modified": "2025-01-27T14:24:00.268Z",
+      "headers": []
     },
     {
       "_id": "9598f9c7-a153-4548-9d45-cfec055f3a02",
@@ -82,16 +73,12 @@
       "method": "POST",
       "sortNum": 40000,
       "created": "2025-01-27T09:56:34.901Z",
-      "modified": "2025-01-27T14:13:04.048Z",
+      "modified": "2025-01-27T14:24:05.473Z",
       "headers": [],
       "body": {
         "type": "json",
         "raw": "{\n\t\t\"firstname\": \"Ben\",\n\t\t\"lastname\": \"Cubin\"\n\t}",
         "form": []
-      },
-      "auth": {
-        "type": "bearer",
-        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkJlbiIsInJvbGVzIjpbMjAwMSwxOTg0LDUxNTBdfSwiaWF0IjoxNzM3OTg3MTc2LCJleHAiOjE3Mzc5ODcxODZ9.Z4RCaysIJYYtes08UiBdy9nN7Ey8WJu30ZN_pL70F08"
       }
     },
     {
@@ -115,18 +102,14 @@
       "method": "DELETE",
       "sortNum": 50000,
       "created": "2025-01-27T09:59:16.358Z",
-      "modified": "2025-01-27T14:14:06.749Z",
+      "modified": "2025-01-27T14:24:12.863Z",
       "headers": [],
       "body": {
         "type": "json",
         "raw": "{\n\t\t\"id\": \"679794702bf6bc1f2039bbc5\"\n}",
         "form": []
-      },
-      "auth": {
-        "type": "bearer",
-        "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IkJlbiIsInJvbGVzIjpbMjAwMSwxOTg0LDUxNTBdfSwiaWF0IjoxNzM3OTg3MjM5LCJleHAiOjE3Mzc5ODcyNDl9.XE495Zd7Aa-M-Kgrv5yrkF7Gitw6o4jSBnmeeNwetfc"
       }
     }
   ],
-  "ref": "CaH6ysIfLYY60QqPQ3CWh7O3OaBxnTgmsSGrCqXsMNL0Qe84mVjw8Z3EGaj369KNLReyZlaSWQX1W5Iv9KOYxA"
+  "ref": "CaH6ysIfLYY60QqPQ3CWh7O3OaBxnTgmsSGrCqXsMNLYUbZsC2jKmO-Lu7Ek-myzuRzbIyXH7LZx5r_6fLVR7g"
 }
